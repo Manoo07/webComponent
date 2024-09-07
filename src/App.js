@@ -1,23 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
-
+// src/App.js
+import React, { useEffect } from "react";
+import "./CustomButtonWC";
 function App() {
+  useEffect(() => {
+    const customButton = document.querySelector("custom-button");
+    customButton?.addEventListener("click", () => {
+      alert("Web Component Button Clicked!");
+    });
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>Testing the Custom Button Web Component</h1>
+      <custom-button label="Hi there "></custom-button>
     </div>
   );
 }
