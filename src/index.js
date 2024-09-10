@@ -1,8 +1,7 @@
-// src/index.js
 import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
-import "./CustomButtonWC"; // Importing the web component
+import "./CustomButtonWC";
 
 ReactDOM.render(
   <React.StrictMode>

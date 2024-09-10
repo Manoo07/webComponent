@@ -1,4 +1,3 @@
-// src/CustomButton.js
 import React from "react";
 
 const CustomButton = ({ label, onClick }) => {
